@@ -1,0 +1,12 @@
+[0mMicrosoft Windows [Versión 10.0.17134.165][0K[?25l
+(c) 2018 Microsoft Corporation. Todos los derechos reservados.[0K
+[0K
+C:\Users\guido\Dropbox\accidentality>[0K[?25h  facet_wrap(.~mes, ncol = 4)[0K[?25l
+[0K[?25h"facet_wrap" no se reconoce como un comando interno o externo,[0K[?25l
+programa o archivo por lotes ejecutable.[0K
+[0K
+C:\Users\guido\Dropbox\accidentality>[0K[?25h  facet_wrap(.~ano+mes, ncol = 4)[0K[?25l
+"facet_wrap" no se reconoce como un comando interno o externo,[0K
+programa o archivo por lotes ejecutable.[0K
+[0K
+C:\Users\guido\Dropbox\accidentality>[0K[?25h
