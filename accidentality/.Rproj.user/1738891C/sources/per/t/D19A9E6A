@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1537899814769.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "536910178",
+    "id" : "D19A9E6A",
+    "lastKnownWriteTime" : 1537889737,
+    "last_content_update" : 1537889737,
+    "path" : "C:/Users/guido/Dropbox/R_Public_Projects/R-Public-Projects/accidentality/99_garbage.R",
+    "project_path" : "99_garbage.R",
+    "properties" : {
+        "cursorPosition" : "9,41",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
