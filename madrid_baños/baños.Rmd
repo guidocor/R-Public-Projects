@@ -44,7 +44,7 @@ df %>% head(3) %>% kable
 Ahora vamos a hacer un mapa con los baños en Madrid. Importante poner la clave correcta de la API : ) 
 
 ```{r, echo=FALSE,results='hide',fig.keep='all', message=FALSE}
-register_google(key = "AIzaSyD4o4eYY8Ht7AJF8tbKKVgsk6h_FZrrUwE")
+register_google(key = "tu clave del api")
 
 mad = qmap("madrid", zoom = 12, source = "stamen")
 mad_map <- mad + 
