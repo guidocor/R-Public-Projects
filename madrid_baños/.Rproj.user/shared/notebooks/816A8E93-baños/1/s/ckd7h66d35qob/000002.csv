@@ -1,0 +1,5 @@
+"0","gganimate(mad_map_2,filename = ""plots/baños.mp4"", interval = 2)
+"
+"2","Error in gganimate(mad_map_2, filename = ""plots/baños.mp4"", interval = 2) : 
+  object 'mad_map_2' not found
+"

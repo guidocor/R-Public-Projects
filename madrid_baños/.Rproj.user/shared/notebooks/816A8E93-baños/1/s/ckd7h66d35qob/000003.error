@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"gganimate(mad_map_2, filename = \"plots/baños.mp4\", interval = 2)","line_number":0}],"message":"Error in gganimate(mad_map_2, filename = \"plots/baños.mp4\", interval = 2) : \n  object 'mad_map_2' not found\n"}

@@ -1,0 +1,42 @@
+rm(list=ls());gc()
+if (!require('pacman')) install.packages('pacman'); library('pacman') 
+# ## install release version from CRAN
+# install.packages("googleway")
+# ## To install the development version you currently need v0.7.1002 of googlePolylines
+# devtools::install_github("SymbolixAU/googlePolylines")
+# ## then you can install googleway
+# devtools::install_github("SymbolixAU/googleway")
+# devtools::install_github('thomasp85/gganimate')
+
+devtools::install_github('thomasp85/gganimate', ref = 'v0.1.1')
+pacman::p_load(googleway, tidyverse, ggmap, data.table, 
+               RColorBrewer, knitr, gganimate, lubridate)
+
+
+
+
+
+
+
+# datos tomados de https://datos.madrid.es/sites/v/index.jsp?vgnextoid=edcaaa8cf6bda510VgnVCM1000001d4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD
+df <- fread("Aseos Publicos Operativos.csv",dec = ",")
+df$lon <- as.numeric(df$LONGITUD)
+df$lat <- as.numeric(df$LATITUD)
+df$fecha <- dmy(df$`FECHA PUESTA EN SERVICIO`)
+df$year <- year(df$fecha)
+df %>% head(3) %>% kable
+
+register_google(key = "AIzaSyD4o4eYY8Ht7AJF8tbKKVgsk6h_FZrrUwE")
+
+
+
+mad = qmap("madrid", zoom = 12, source = "stamen")
+
+suppressWarnings(
+  mad_map_2 <- mad + 
+    geom_point(data = df, aes(x=lon, y = lat), alpha=0.4, color = "black") +
+    geom_point(data = df, aes(x=lon, y = lat, frame = year), color = "red", size = 3) +
+    ggtitle("Baños públicos en Madrid") + theme(plot.title = element_text(size=22))
+)
+
+gganimate(mad_map_2,filename = "baños.gif", interval = 2)

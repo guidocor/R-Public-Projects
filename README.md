@@ -1,10 +1,1 @@
-# Proyectos de análisis de datos
-
-Aquí iré poniendo algunos de los proyectos propios que voy haciendo para poner en práctica mis conocimientos de análisis de datos. 
-
-## Lista 
-- Número de accidentes por hora en Madrid (GAM)
-
-
-
-
+﻿# Proyectos de análisis de datosAquí iré poniendo algunos de los proyectos propios que voy haciendo para poner en práctica mis conocimientos de análisis de datos. ## Proyectos - Número de accidentes [por hora en Madrid](https://github.com/guidocor/R-Public-Projects/tree/master/accidentality) (GAM)- Despliegue de los baños públicos de Madrid

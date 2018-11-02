@@ -1,0 +1,5 @@
+"0","mad_map_2 <- mad + 
+  geom_point(data = df, aes(x=lon, y = lat), alpha=0.8, color = ""black"")+
+  geom_point(data = df, aes(x=lon, y = lat, frame = year), color = ""#800000"")
+"
+"2","Ignoring unknown aesthetics: frame"

@@ -1,0 +1,1 @@
+﻿# Baños públicos de MadridPequeño ejercicio de mapeo y animación usando los datos del portal de datos abiertos de Madrid para ver dónde  y cuando se pusieron los baños públicos de Madrid. 
