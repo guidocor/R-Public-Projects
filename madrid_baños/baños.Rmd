@@ -4,7 +4,7 @@ output: html_document
 ---
 # Los baños de madrid
 
-Como algunos sabréis tengo especial sensibilidad hacia los baños: mi [http://www.crohnscolitisfoundation.org/resources/vivir-con-la-colitis-ulcerosa.html](enfermedad crónica) me ha convertido en una persona dedicada a su estudio informal. Una de las cosas que más habitualmente hago es usar baños públicos, en ocasiones es un auténtico reto urbano. Todo esto lo cuento porque recientementer he visto que en el portal de datos de Madrid existe una base de datos con los baños públicos (de pago, 0.10€, porque las ciudad tienen consumidores, no ciudadanos...) con sus localizaciones. Con ella podemos saber algunas cosillas interesantes.Al lío:
+Como algunos sabréis tengo especial sensibilidad hacia los baños: mi [enfermedad crónica](http://www.crohnscolitisfoundation.org/resources/vivir-con-la-colitis-ulcerosa.html) me ha convertido en una persona dedicada a su estudio informal. Una de las cosas que más habitualmente hago es usar baños públicos, en ocasiones es un auténtico reto urbano. Todo esto lo cuento porque recientementer he visto que en el portal de datos de Madrid existe una base de datos con los baños públicos (de pago, 0.10€, porque las ciudad tienen consumidores, no ciudadanos...) con sus localizaciones. Con ella podemos saber algunas cosillas interesantes. Aunque nunca hay que olvidar aspectos cualitativos, por ejemplo en Intercambiador de Moncloa haría falta quizá un baño de este ya que los que hay son inusables. Al lío:
 
 ## Setup de R
 
@@ -43,8 +43,8 @@ df %>% head(3) %>% kable
 
 Ahora vamos a hacer un mapa con los baños en Madrid. Importante poner la clave correcta de la API : ) 
 
-```{r, echo=FALSE,results='hide',fig.keep='all', message=FALSE}
-register_google(key = "tu clave del api")
+```{r, echo=FALSE,results='hide', fig.keep='all', message=FALSE}
+register_google(key = "tu api aqui")
 
 mad = qmap("madrid", zoom = 12, source = "stamen")
 mad_map <- mad + 
@@ -66,7 +66,7 @@ Siempre me ha interesado como se despliegan las cosas en la ciudad. Me da la imp
 
 Aspectos técnicos a tener en cuenta... Bueno, gganimate tuvo un gran cambio en sus nuevas versiones que lo hacen más potente, pero está muy mal documentado. Así que nos quedamos con la versión 0.1.1. Hacer la animación es lo que más tiempo me ha llevado. Tienes que ejecutar Rstudio como administrador y bajarte ImageMagick con sus dependencias legacy. 
 
-```{r}
+```{r, echo = TRUE , results="hide", message=FALSE, fig.show='animate'}
 # https://rpubs.com/omicsdata/gganimate
 
 suppressWarnings(
